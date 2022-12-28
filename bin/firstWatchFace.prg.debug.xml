@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="1" lineNum="11" parent="globals/firstWatchFaceView" pc="268435460" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="2" lineNum="55" parent="globals/firstWatchFaceView" pc="268435479" symbol="setTimeDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="2" lineNum="56" parent="globals/firstWatchFaceView" pc="268435483" symbol="setTimeDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="2" lineNum="57" parent="globals/firstWatchFaceView" pc="268435500" symbol="setTimeDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="2" lineNum="58" parent="globals/firstWatchFaceView" pc="268435544" symbol="setTimeDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="2" lineNum="59" parent="globals/firstWatchFaceView" pc="268435602" symbol="setTimeDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="2" lineNum="61" parent="globals/firstWatchFaceView" pc="268435646" symbol="setTimeDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="2" lineNum="62" parent="globals/firstWatchFaceView" pc="268435674" symbol="setTimeDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="2" lineNum="63" parent="globals/firstWatchFaceView" pc="268435702" symbol="setTimeDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="2" lineNum="65" parent="globals/firstWatchFaceView" pc="268435730" symbol="setTimeDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="2" lineNum="66" parent="globals/firstWatchFaceView" pc="268435744" symbol="setTimeDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="2" lineNum="67" parent="globals/firstWatchFaceView" pc="268435758" symbol="setTimeDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="5" lineNum="18" parent="globals/firstWatchFaceView" pc="268435773" symbol="onLayout"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="5" lineNum="19" parent="globals/firstWatchFaceView" pc="268435775" symbol="onLayout"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="6" lineNum="100" parent="globals/firstWatchFaceView" pc="268435817" symbol="setHeartRateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="6" lineNum="101" parent="globals/firstWatchFaceView" pc="268435821" symbol="setHeartRateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="6" lineNum="102" parent="globals/firstWatchFaceView" pc="268435828" symbol="setHeartRateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="6" lineNum="103" parent="globals/firstWatchFaceView" pc="268435843" symbol="setHeartRateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="6" lineNum="105" parent="globals/firstWatchFaceView" pc="268435866" symbol="setHeartRateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="6" lineNum="106" parent="globals/firstWatchFaceView" pc="268435873" symbol="setHeartRateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="6" lineNum="107" parent="globals/firstWatchFaceView" pc="268435897" symbol="setHeartRateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="6" lineNum="109" parent="globals/firstWatchFaceView" pc="268435910" symbol="setHeartRateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="6" lineNum="111" parent="globals/firstWatchFaceView" pc="268435937" symbol="setHeartRateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="6" lineNum="115" parent="globals/firstWatchFaceView" pc="268435953" symbol="setHeartRateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="6" lineNum="116" parent="globals/firstWatchFaceView" pc="268435960" symbol="setHeartRateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="6" lineNum="118" parent="globals/firstWatchFaceView" pc="268435982" symbol="setHeartRateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="6" lineNum="122" parent="globals/firstWatchFaceView" pc="268435992" symbol="setHeartRateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="6" lineNum="123" parent="globals/firstWatchFaceView" pc="268436020" symbol="setHeartRateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="7" lineNum="70" parent="globals/firstWatchFaceView" pc="268436035" symbol="setBatteryDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="7" lineNum="71" parent="globals/firstWatchFaceView" pc="268436039" symbol="setBatteryDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="7" lineNum="72" parent="globals/firstWatchFaceView" pc="268436062" symbol="setBatteryDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="7" lineNum="73" parent="globals/firstWatchFaceView" pc="268436090" symbol="setBatteryDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="8" lineNum="76" parent="globals/firstWatchFaceView" pc="268436131" symbol="setDateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="8" lineNum="77" parent="globals/firstWatchFaceView" pc="268436135" symbol="setDateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="8" lineNum="78" parent="globals/firstWatchFaceView" pc="268436152" symbol="setDateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="8" lineNum="79" parent="globals/firstWatchFaceView" pc="268436195" symbol="setDateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="8" lineNum="80" parent="globals/firstWatchFaceView" pc="268436271" symbol="setDateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="8" lineNum="81" parent="globals/firstWatchFaceView" pc="268436299" symbol="setDateDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="9" lineNum="126" parent="globals/firstWatchFaceView" pc="268436314" symbol="setStepDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="9" lineNum="127" parent="globals/firstWatchFaceView" pc="268436318" symbol="setStepDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="9" lineNum="128" parent="globals/firstWatchFaceView" pc="268436350" symbol="setStepDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="9" lineNum="130" parent="globals/firstWatchFaceView" pc="268436357" symbol="setStepDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="9" lineNum="131" parent="globals/firstWatchFaceView" pc="268436364" symbol="setStepDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="9" lineNum="134" parent="globals/firstWatchFaceView" pc="268436377" symbol="setStepDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="9" lineNum="135" parent="globals/firstWatchFaceView" pc="268436405" symbol="setStepDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="10" lineNum="84" parent="globals/firstWatchFaceView" pc="268436420" symbol="setNotificationCountDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="10" lineNum="85" parent="globals/firstWatchFaceView" pc="268436424" symbol="setNotificationCountDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="10" lineNum="87" parent="globals/firstWatchFaceView" pc="268436447" symbol="setNotificationCountDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="10" lineNum="89" parent="globals/firstWatchFaceView" pc="268436454" symbol="setNotificationCountDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="10" lineNum="90" parent="globals/firstWatchFaceView" pc="268436465" symbol="setNotificationCountDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="10" lineNum="93" parent="globals/firstWatchFaceView" pc="268436475" symbol="setNotificationCountDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="10" lineNum="96" parent="globals/firstWatchFaceView" pc="268436499" symbol="setNotificationCountDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="10" lineNum="97" parent="globals/firstWatchFaceView" pc="268436527" symbol="setNotificationCountDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="12" lineNum="13" parent="globals/firstWatchFaceView" pc="268436542" symbol="initialize"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="12" lineNum="14" parent="globals/firstWatchFaceView" pc="268436544" symbol="initialize"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="14" lineNum="29" parent="globals/firstWatchFaceView" pc="268436563" symbol="onUpdate"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="14" lineNum="31" parent="globals/firstWatchFaceView" pc="268436565" symbol="onUpdate"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="14" lineNum="34" parent="globals/firstWatchFaceView" pc="268436577" symbol="onUpdate"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="14" lineNum="37" parent="globals/firstWatchFaceView" pc="268436589" symbol="onUpdate"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="14" lineNum="40" parent="globals/firstWatchFaceView" pc="268436601" symbol="onUpdate"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="14" lineNum="43" parent="globals/firstWatchFaceView" pc="268436613" symbol="onUpdate"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="14" lineNum="46" parent="globals/firstWatchFaceView" pc="268436625" symbol="onUpdate"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="14" lineNum="49" parent="globals/firstWatchFaceView" pc="268436637" symbol="onUpdate"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="14" lineNum="52" parent="globals/firstWatchFaceView" pc="268436649" symbol="onUpdate"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="15" lineNum="138" parent="globals/firstWatchFaceView" pc="268436674" symbol="setCaloriesDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="15" lineNum="139" parent="globals/firstWatchFaceView" pc="268436678" symbol="setCaloriesDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="15" lineNum="140" parent="globals/firstWatchFaceView" pc="268436710" symbol="setCaloriesDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="15" lineNum="142" parent="globals/firstWatchFaceView" pc="268436717" symbol="setCaloriesDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="15" lineNum="143" parent="globals/firstWatchFaceView" pc="268436724" symbol="setCaloriesDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="15" lineNum="146" parent="globals/firstWatchFaceView" pc="268436737" symbol="setCaloriesDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceView.mc" id="15" lineNum="147" parent="globals/firstWatchFaceView" pc="268436765" symbol="setCaloriesDisplay"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceApp.mc" id="16" lineNum="26" parent="globals" pc="268436780" symbol="getApp"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceApp.mc" id="16" lineNum="27" parent="globals" pc="268436790" symbol="getApp"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceApp.mc" id="17" lineNum="5" parent="globals/firstWatchFaceApp" pc="268436806" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceApp.mc" id="18" lineNum="12" parent="globals/firstWatchFaceApp" pc="268436825" symbol="onStart"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceApp.mc" id="19" lineNum="20" parent="globals/firstWatchFaceApp" pc="268436828" symbol="getInitialView"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceApp.mc" id="19" lineNum="21" parent="globals/firstWatchFaceApp" pc="268436830" symbol="getInitialView"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceApp.mc" id="20" lineNum="7" parent="globals/firstWatchFaceApp" pc="268436871" symbol="initialize"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceApp.mc" id="20" lineNum="8" parent="globals/firstWatchFaceApp" pc="268436873" symbol="initialize"/>
+<entry filename="C:\\Users\\white\\OneDrive\\Garmin Watchfaces\\firstWatchFace\\source\\firstWatchFaceApp.mc" id="21" lineNum="16" parent="globals/firstWatchFaceApp" pc="268436892" symbol="onStop"/>
+<entry filename="Rez.mc" id="22" lineNum="1" parent="globals/Rez" pc="268436895" symbol="&lt;init&gt;"/>
+<entry filename="Rez.mc" id="23" lineNum="18" parent="globals/Rez/Layouts" pc="268436919" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="23" lineNum="20" parent="globals/Rez/Layouts" pc="268436931" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="23" lineNum="21" parent="globals/Rez/Layouts" pc="268437010" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="23" lineNum="22" parent="globals/Rez/Layouts" pc="268437145" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="23" lineNum="23" parent="globals/Rez/Layouts" pc="268437257" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="23" lineNum="24" parent="globals/Rez/Layouts" pc="268437369" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="23" lineNum="25" parent="globals/Rez/Layouts" pc="268437481" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="23" lineNum="26" parent="globals/Rez/Layouts" pc="268437593" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="23" lineNum="27" parent="globals/Rez/Layouts" pc="268437705" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="23" lineNum="28" parent="globals/Rez/Layouts" pc="268437817" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="23" lineNum="29" parent="globals/Rez/Layouts" pc="268437929" symbol="WatchFace"/>
+<entry filename="Rez.mc" id="23" lineNum="31" parent="globals/Rez/Layouts" pc="268438041" symbol="WatchFace"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="14" method="true" symbol="setHeartRateDisplay"/>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="7" module="true" symbol="globals/Rez/Menus"/>
+<entry id="16" method="true" symbol="setStepDisplay"/>
+<entry id="12" method="true" symbol="setCaloriesDisplay"/>
+<entry id="8389702" method="true" symbol="getHeartRateHistory"/>
+<entry id="13" method="true" symbol="setDateDisplay"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="21" symbol="AppName"/>
+<entry id="8" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8389345" symbol="rezId"/>
+<entry id="8388631" module="true" symbol="Activity"/>
+<entry id="15" method="true" symbol="setNotificationCountDisplay"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389348" symbol="font"/>
+<entry id="19" module="true" symbol="Menus"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="8389376" method="true" symbol="onEnterSleep"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="8389349" symbol="justification"/>
+<entry id="5" module="true" symbol="globals/Rez/JsonData"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="11" method="true" symbol="setBatteryDisplay"/>
+<entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="20" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="17" method="true" symbol="setTimeDisplay"/>
+<entry field="true" id="8390146" module="true" symbol="Background"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="9" object="true" symbol="firstWatchFaceApp"/>
+<entry id="8389347" symbol="color"/>
+<entry id="10" object="true" symbol="firstWatchFaceView"/>
+<entry id="18" module="true" symbol="Layouts"/>
+<entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="8388635" module="true" symbol="Application"/>
+</symbolTable>
+<localVars>
+<entry endPc="268435771" name="clockTime" stackId="1" startPc="268435483"/>
+<entry endPc="268435771" name="hourString" stackId="2" startPc="268435483"/>
+<entry endPc="268435771" name="minuteString" stackId="3" startPc="268435483"/>
+<entry endPc="268435771" name="secondString" stackId="4" startPc="268435483"/>
+<entry endPc="268435771" name="hourView" stackId="5" startPc="268435483"/>
+<entry endPc="268435771" name="minuteView" stackId="6" startPc="268435483"/>
+<entry endPc="268435771" name="secondView" stackId="7" startPc="268435483"/>
+<entry arg="true" endPc="268435816" name="dc" stackId="1" startPc="268435773"/>
+<entry endPc="268436033" name="heartRate" stackId="1" startPc="268435821"/>
+<entry endPc="268435949" name="HRH" stackId="2" startPc="268435873"/>
+<entry endPc="268435949" name="HRS" stackId="3" startPc="268435873"/>
+<entry endPc="268436033" name="heartRateDisplay" stackId="4" startPc="268435821"/>
+<entry endPc="268436129" name="battery" stackId="1" startPc="268436039"/>
+<entry endPc="268436129" name="batteryDisplay" stackId="2" startPc="268436039"/>
+<entry endPc="268436312" name="now" stackId="1" startPc="268436135"/>
+<entry endPc="268436312" name="today" stackId="2" startPc="268436135"/>
+<entry endPc="268436312" name="dateString" stackId="3" startPc="268436135"/>
+<entry endPc="268436312" name="dateDisplay" stackId="4" startPc="268436135"/>
+<entry endPc="268436418" name="stepsData" stackId="1" startPc="268436318"/>
+<entry endPc="268436418" name="steps" stackId="2" startPc="268436318"/>
+<entry endPc="268436418" name="stepsDisplay" stackId="3" startPc="268436318"/>
+<entry endPc="268436540" name="notificationAmount" stackId="1" startPc="268436424"/>
+<entry endPc="268436540" name="formattedNotificationAmount" stackId="2" startPc="268436424"/>
+<entry endPc="268436540" name="notificationCountDisplay" stackId="3" startPc="268436424"/>
+<entry arg="true" endPc="268436673" name="dc" stackId="1" startPc="268436563"/>
+<entry endPc="268436778" name="caloriesData" stackId="1" startPc="268436678"/>
+<entry endPc="268436778" name="calories" stackId="2" startPc="268436678"/>
+<entry endPc="268436778" name="caloriesDisplay" stackId="3" startPc="268436678"/>
+<entry arg="true" endPc="268438147" name="dc" stackId="1" startPc="268436919"/>
+<entry endPc="268438147" name="rez_cmp_local_bitmap_Background" stackId="2" startPc="268436931"/>
+<entry endPc="268438147" name="rez_cmp_local_text_HourLabel" stackId="3" startPc="268436931"/>
+<entry endPc="268438147" name="rez_cmp_local_text_MinuteLabel" stackId="4" startPc="268436931"/>
+<entry endPc="268438147" name="rez_cmp_local_text_SecondLabel" stackId="5" startPc="268436931"/>
+<entry endPc="268438147" name="rez_cmp_local_text_DateLabel" stackId="6" startPc="268436931"/>
+<entry endPc="268438147" name="rez_cmp_local_text_BatteryLabel" stackId="7" startPc="268436931"/>
+<entry endPc="268438147" name="rez_cmp_local_text_NotificationCountLabel" stackId="8" startPc="268436931"/>
+<entry endPc="268438147" name="rez_cmp_local_text_HeartRateLabel" stackId="9" startPc="268436931"/>
+<entry endPc="268438147" name="rez_cmp_local_text_StepsLabel" stackId="10" startPc="268436931"/>
+<entry endPc="268438147" name="rez_cmp_local_text_CaloriesLabel" stackId="11" startPc="268436931"/>
+</localVars>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Background"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/firstWatchFaceView" offset="158" parentId="globals" symbolId="firstWatchFaceView" type="class"/>
+<dataEntry label="globals/firstWatchFaceApp" offset="309" parentId="globals" symbolId="firstWatchFaceApp" type="class"/>
+<dataEntry label="globals/Rez" offset="380" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/Rez/Drawables" offset="459" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="506" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="545" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="576" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="607" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="646" parentId="Rez" symbolId="JsonData" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="firstWatchFaceView" startPc="268435460">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268435772" name="setTimeDisplay" parent="firstWatchFaceView" startPc="268435479">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onExitSleep" parent="firstWatchFaceView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="firstWatchFaceView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435816" name="onLayout" parent="firstWatchFaceView" startPc="268435773">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436034" name="setHeartRateDisplay" parent="firstWatchFaceView" startPc="268435817">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436130" name="setBatteryDisplay" parent="firstWatchFaceView" startPc="268436035">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436313" name="setDateDisplay" parent="firstWatchFaceView" startPc="268436131">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436419" name="setStepDisplay" parent="firstWatchFaceView" startPc="268436314">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436541" name="setNotificationCountDisplay" parent="firstWatchFaceView" startPc="268436420">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onEnterSleep" parent="firstWatchFaceView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436562" name="initialize" parent="firstWatchFaceView" startPc="268436542">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="firstWatchFaceView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436673" name="onUpdate" parent="firstWatchFaceView" startPc="268436563">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436779" name="setCaloriesDisplay" parent="firstWatchFaceView" startPc="268436674">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436805" name="getApp" startPc="268436780">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436824" name="&lt;init&gt;" parent="firstWatchFaceApp" startPc="268436806">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436827" name="onStart" parent="firstWatchFaceApp" startPc="268436825">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436870" name="getInitialView" parent="firstWatchFaceApp" startPc="268436828">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436891" name="initialize" parent="firstWatchFaceApp" startPc="268436871">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436894" name="onStop" parent="firstWatchFaceApp" startPc="268436892">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436918" name="&lt;init&gt;" parent="Rez" startPc="268436895">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438147" name="WatchFace" parent="Layouts" startPc="268436919">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>
