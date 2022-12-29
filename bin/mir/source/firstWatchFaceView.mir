@@ -23,19 +23,30 @@ class firstWatchFaceView extends WatchUi.WatchFace{
     static
     <init> {
     }
-    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 13; ]
+    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 12; @position = 8; ]
+    var batteryIcon;
+    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 14; ]
     function initialize() as Void {
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_13_26_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 14 8 ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_14_26_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 15 8 ]
         %tmp.2 = getv ? :WatchFace;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_13_26_stop:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 16 8 ]
+        %tmp.4 = getm $.Toybox.WatchUi;
+        %tmp.5 = getv function %tmp.4 :loadResource;
+        %tmp.7 = getv ? :Rez;
+        %tmp.8 = getv %tmp.7 :Drawables;
+        %tmp.9 = getv %tmp.8 :BatteryIcon;
+        %tmp.10 = invoke %tmp.4 %tmp.5(%tmp.9);
+        %tmp.11 = as %tmp.10 BitmapResource;
+        putv self :batteryIcon %tmp.11;
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_14_26_stop:
     }
-    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 18; ]
+    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 20; ]
     function onLayout(dc as Dc) as Void {
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_18_40_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 19 8 ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_20_40_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 21 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
         %tmp.4 = getv ? :Rez;
@@ -44,62 +55,69 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_18_40_stop:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_20_40_stop:
     }
-    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 25; ]
+    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 27; ]
     function onShow() as Void {
     }
-    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 29; ]
+    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 31; ]
     function onUpdate(dc as Dc) as Void {
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_29_40_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 31 8 ]
-        %tmp.1 = self;
-        %tmp.2 = getv function %tmp.1 :setTimeDisplay;
-        invoke %tmp.1 %tmp.2();
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 34 8 ]
-        %tmp.3 = self;
-        %tmp.4 = getv function %tmp.3 :setDateDisplay;
-        invoke %tmp.3 %tmp.4();
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 37 8 ]
-        %tmp.5 = self;
-        %tmp.6 = getv function %tmp.5 :setBatteryDisplay;
-        invoke %tmp.5 %tmp.6();
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 40 8 ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_31_40_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 33 8 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :drawBitmap;
+        %tmp.3 = 100;
+        %tmp.4 = 100;
+        %tmp.6 = getv ? :batteryIcon;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4, %tmp.6);
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 35 8 ]
         %tmp.7 = self;
-        %tmp.8 = getv function %tmp.7 :setNotificationCountDisplay;
+        %tmp.8 = getv function %tmp.7 :setTimeDisplay;
         invoke %tmp.7 %tmp.8();
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 43 8 ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 38 8 ]
         %tmp.9 = self;
-        %tmp.10 = getv function %tmp.9 :setHeartRateDisplay;
+        %tmp.10 = getv function %tmp.9 :setDateDisplay;
         invoke %tmp.9 %tmp.10();
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 46 8 ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 41 8 ]
         %tmp.11 = self;
-        %tmp.12 = getv function %tmp.11 :setStepDisplay;
+        %tmp.12 = getv function %tmp.11 :setBatteryDisplay;
         invoke %tmp.11 %tmp.12();
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 49 8 ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 44 8 ]
         %tmp.13 = self;
-        %tmp.14 = getv function %tmp.13 :setCaloriesDisplay;
+        %tmp.14 = getv function %tmp.13 :setNotificationCountDisplay;
         invoke %tmp.13 %tmp.14();
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 52 8 ]
-        %tmp.16 = getv ? :View;
-        %tmp.17 = getv function %tmp.16 :onUpdate;
-        %tmp.19 = lgetv %dc;
-        invoke %tmp.16 %tmp.17(%tmp.19);
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_29_40_stop:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 47 8 ]
+        %tmp.15 = self;
+        %tmp.16 = getv function %tmp.15 :setHeartRateDisplay;
+        invoke %tmp.15 %tmp.16();
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 50 8 ]
+        %tmp.17 = self;
+        %tmp.18 = getv function %tmp.17 :setStepDisplay;
+        invoke %tmp.17 %tmp.18();
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 53 8 ]
+        %tmp.19 = self;
+        %tmp.20 = getv function %tmp.19 :setCaloriesDisplay;
+        invoke %tmp.19 %tmp.20();
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 56 8 ]
+        %tmp.22 = getv ? :View;
+        %tmp.23 = getv function %tmp.22 :onUpdate;
+        %tmp.25 = lgetv %dc;
+        invoke %tmp.22 %tmp.23(%tmp.25);
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_31_40_stop:
     }
-    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 55; ]
+    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 59; ]
     protected
     function setTimeDisplay() {
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_55_37_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 56 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_55_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_55_37_stop" ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_59_37_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 60 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_59_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_59_37_stop" ]
         %clockTime.1 = local;
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :getClockTime;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %clockTime.1 %tmp.3;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 57 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_55_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_55_37_stop" ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 61 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_59_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_59_37_stop" ]
         %hourString.2 = local;
         %tmp.4 = getm $.Toybox.Lang;
         %tmp.5 = getv function %tmp.4 :format;
@@ -111,8 +129,8 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.11 = aputv %tmp.10 0 %tmp.9;
         %tmp.12 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.11);
         lputv %hourString.2 %tmp.12;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 58 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_55_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_55_37_stop" ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 62 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_59_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_59_37_stop" ]
         %minuteString.3 = local;
         %tmp.13 = getm $.Toybox.Lang;
         %tmp.14 = getv function %tmp.13 :format;
@@ -127,8 +145,8 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.23 = aputv %tmp.22 0 %tmp.21;
         %tmp.24 = invoke %tmp.13 %tmp.14(%tmp.15, %tmp.23);
         lputv %minuteString.3 %tmp.24;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 59 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_55_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_55_37_stop" ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 63 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_59_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_59_37_stop" ]
         %secondString.4 = local;
         %tmp.25 = getm $.Toybox.Lang;
         %tmp.26 = getv function %tmp.25 :format;
@@ -140,8 +158,8 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.32 = aputv %tmp.31 0 %tmp.30;
         %tmp.33 = invoke %tmp.25 %tmp.26(%tmp.27, %tmp.32);
         lputv %secondString.4 %tmp.33;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 61 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_55_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_55_37_stop" ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 65 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_59_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_59_37_stop" ]
         %hourView.5 = local;
         %tmp.35 = getv ? :View;
         %tmp.36 = getv function %tmp.35 :findDrawableById;
@@ -149,8 +167,8 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.38 = invoke %tmp.35 %tmp.36(%tmp.37);
         %tmp.39 = as %tmp.38 Text;
         lputv %hourView.5 %tmp.39;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 62 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_55_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_55_37_stop" ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 66 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_59_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_59_37_stop" ]
         %minuteView.6 = local;
         %tmp.41 = getv ? :View;
         %tmp.42 = getv function %tmp.41 :findDrawableById;
@@ -158,8 +176,8 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.44 = invoke %tmp.41 %tmp.42(%tmp.43);
         %tmp.45 = as %tmp.44 Text;
         lputv %minuteView.6 %tmp.45;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 63 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_55_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_55_37_stop" ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 67 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_59_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_59_37_stop" ]
         %secondView.7 = local;
         %tmp.47 = getv ? :View;
         %tmp.48 = getv function %tmp.47 :findDrawableById;
@@ -167,37 +185,37 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.50 = invoke %tmp.47 %tmp.48(%tmp.49);
         %tmp.51 = as %tmp.50 Text;
         lputv %secondView.7 %tmp.51;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 65 8 ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 69 8 ]
         %tmp.52 = lgetv %hourView.5;
         %tmp.53 = getv function %tmp.52 :setText;
         %tmp.55 = lgetv %hourString.2;
         invoke %tmp.52 %tmp.53(%tmp.55);
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 66 8 ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 70 8 ]
         %tmp.56 = lgetv %minuteView.6;
         %tmp.57 = getv function %tmp.56 :setText;
         %tmp.59 = lgetv %minuteString.3;
         invoke %tmp.56 %tmp.57(%tmp.59);
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 67 8 ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 71 8 ]
         %tmp.60 = lgetv %secondView.7;
         %tmp.61 = getv function %tmp.60 :setText;
         %tmp.63 = lgetv %secondString.4;
         invoke %tmp.60 %tmp.61(%tmp.63);
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_55_37_stop:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_59_37_stop:
     }
-    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 70; ]
+    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 74; ]
     protected
     function setBatteryDisplay() {
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_70_40_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 71 5 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_70_40_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_70_40_stop" ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_74_40_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 75 5 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_74_40_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_74_40_stop" ]
         %battery.1 = local;
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :getSystemStats;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = getv %tmp.3 :battery;
         lputv %battery.1 %tmp.4;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 72 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_70_40_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_70_40_stop" ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 76 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_74_40_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_74_40_stop" ]
         %batteryDisplay.2 = local;
         %tmp.6 = getv ? :View;
         %tmp.7 = getv function %tmp.6 :findDrawableById;
@@ -205,7 +223,7 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
         %tmp.10 = as %tmp.9 Text;
         lputv %batteryDisplay.2 %tmp.10;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 73 8 ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 77 8 ]
         %tmp.11 = lgetv %batteryDisplay.2;
         %tmp.12 = getv function %tmp.11 :setText;
         %tmp.13 = "Batt: ";
@@ -217,21 +235,21 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.19 = "%";
         %tmp.20 = add %tmp.18 %tmp.19;
         invoke %tmp.11 %tmp.12(%tmp.20);
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_70_40_stop:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_74_40_stop:
     }
-    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 76; ]
+    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 80; ]
     protected
     function setDateDisplay() {
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_76_37_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 77 5 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_76_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_76_37_stop" ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_80_37_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 81 5 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_80_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_80_37_stop" ]
         %now.1 = local;
         %tmp.1 = getm $.Toybox.Time;
         %tmp.2 = getv function %tmp.1 :now;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %now.1 %tmp.3;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 78 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_76_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_76_37_stop" ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 82 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_80_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_80_37_stop" ]
         %today.2 = local;
         %tmp.5 = getv ? :Gregorian;
         %tmp.6 = getv function %tmp.5 :info;
@@ -242,8 +260,8 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.11 = getv %tmp.10 :FORMAT_MEDIUM;
         %tmp.12 = invoke %tmp.5 %tmp.6(%tmp.9, %tmp.11);
         lputv %today.2 %tmp.12;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 79 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_76_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_76_37_stop" ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 83 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_80_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_80_37_stop" ]
         %dateString.3 = local;
         %tmp.13 = getm $.Toybox.Lang;
         %tmp.14 = getv function %tmp.13 :format;
@@ -263,8 +281,8 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.28 = aputv %tmp.27 2 %tmp.26;
         %tmp.29 = invoke %tmp.13 %tmp.14(%tmp.15, %tmp.28);
         lputv %dateString.3 %tmp.29;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 80 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_76_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_76_37_stop" ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 84 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_80_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_80_37_stop" ]
         %dateDisplay.4 = local;
         %tmp.31 = getv ? :View;
         %tmp.32 = getv function %tmp.31 :findDrawableById;
@@ -272,46 +290,46 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.34 = invoke %tmp.31 %tmp.32(%tmp.33);
         %tmp.35 = as %tmp.34 Text;
         lputv %dateDisplay.4 %tmp.35;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 81 8 ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 85 8 ]
         %tmp.36 = lgetv %dateDisplay.4;
         %tmp.37 = getv function %tmp.36 :setText;
         %tmp.39 = lgetv %dateString.3;
         invoke %tmp.36 %tmp.37(%tmp.39);
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_76_37_stop:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_80_37_stop:
     }
-    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 84; ]
+    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 88; ]
     protected
     function setNotificationCountDisplay() {
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_84_50_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 85 5 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_84_50_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_84_50_stop" ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_88_50_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 89 5 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_88_50_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_88_50_stop" ]
         %notificationAmount.1 = local;
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :getDeviceSettings;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = getv %tmp.3 :notificationCount;
         lputv %notificationAmount.1 %tmp.4;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 87 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_84_50_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_84_50_stop" ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 91 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_88_50_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_88_50_stop" ]
         %formattedNotificationAmount.2 = local;
         %tmp.5 = "";
         lputv %formattedNotificationAmount.2 %tmp.5;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 89 8 ]
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_89_8_if_stmt:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 93 8 ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_93_8_if_stmt:
         %tmp.7 = lgetv %notificationAmount.1;
         %tmp.8 = 10;
         %tmp.9 = gt %tmp.7 %tmp.8;
-        bf %tmp.9 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_89_8_if_false;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_89_8_if_true:
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_89_36_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 90 12 ]
+        bf %tmp.9 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_93_8_if_false;
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_93_8_if_true:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_93_36_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 94 12 ]
         %tmp.10 = "Notif 10+";
         lputv %formattedNotificationAmount.2 %tmp.10;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_89_36_stop:
-        goto @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_89_8_if_end;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_89_8_if_false:
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_92_13_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 93 12 ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_93_36_stop:
+        goto @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_93_8_if_end;
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_93_8_if_false:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_96_13_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 97 12 ]
         %tmp.11 = "Notif ";
         %tmp.12 = lgetv %notificationAmount.1;
         %tmp.13 = getv function %tmp.12 :format;
@@ -319,10 +337,10 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
         %tmp.16 = add %tmp.11 %tmp.15;
         lputv %formattedNotificationAmount.2 %tmp.16;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_92_13_stop:
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_89_8_if_end:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 96 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_84_50_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_84_50_stop" ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_96_13_stop:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_93_8_if_end:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 100 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_88_50_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_88_50_stop" ]
         %notificationCountDisplay.3 = local;
         %tmp.18 = getv ? :View;
         %tmp.19 = getv function %tmp.18 :findDrawableById;
@@ -330,46 +348,46 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
         %tmp.22 = as %tmp.21 Text;
         lputv %notificationCountDisplay.3 %tmp.22;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 97 8 ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 101 8 ]
         %tmp.23 = lgetv %notificationCountDisplay.3;
         %tmp.24 = getv function %tmp.23 :setText;
         %tmp.26 = lgetv %formattedNotificationAmount.2;
         invoke %tmp.23 %tmp.24(%tmp.26);
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_84_50_stop:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_88_50_stop:
     }
-    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 100; ]
+    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 104; ]
     protected
     function setHeartRateDisplay() {
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_100_42_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 101 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_100_42_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_100_42_stop" ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_104_42_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 105 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_104_42_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_104_42_stop" ]
         %heartRate.1 = local;
         %tmp.1 = "";
         lputv %heartRate.1 %tmp.1;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 102 8 ]
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_102_8_if_stmt:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 106 8 ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_106_8_if_stmt:
         %tmp.3 = getm $.Toybox.ActivityMonitor;
         %tmp.5 = const :getHeartRateHistory;
         %tmp.6 = canhazplz %tmp.3 %tmp.5;
-        bf %tmp.6 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_102_8_if_end;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_102_8_if_true:
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_102_42_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 103 12 ]
+        bf %tmp.6 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_106_8_if_end;
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_106_8_if_true:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_106_42_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 107 12 ]
         %tmp.7 = getm $.Toybox.Activity;
         %tmp.8 = getv function %tmp.7 :getActivityInfo;
         %tmp.9 = invoke %tmp.7 %tmp.8();
         %tmp.10 = getv %tmp.9 :currentHeartRate;
         lputv %heartRate.1 %tmp.10;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 105 12 ]
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_105_12_if_stmt:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 109 12 ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_12_if_stmt:
         %tmp.12 = lgetv %heartRate.1;
         %tmp.13 = null;
         %tmp.14 = eq %tmp.12 %tmp.13;
-        bf %tmp.14 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_105_12_if_end;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_105_12_if_true:
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_105_32_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 106 16 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_105_32_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_105_32_stop" ]
+        bf %tmp.14 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_12_if_end;
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_12_if_true:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_32_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 110 16 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_32_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_32_stop" ]
         %HRH.2 = local;
         %tmp.15 = getm $.Toybox.ActivityMonitor;
         %tmp.16 = getv function %tmp.15 :getHeartRateHistory;
@@ -377,22 +395,22 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.18 = true;
         %tmp.19 = invoke %tmp.15 %tmp.16(%tmp.17, %tmp.18);
         lputv %HRH.2 %tmp.19;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 107 16 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_105_32_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_105_32_stop" ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 111 16 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_32_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_32_stop" ]
         %HRS.3 = local;
         %tmp.20 = lgetv %HRH.2;
         %tmp.21 = getv function %tmp.20 :next;
         %tmp.22 = invoke %tmp.20 %tmp.21();
         lputv %HRS.3 %tmp.22;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 109 16 ]
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_16_if_stmt:
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_19_begin:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 113 16 ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_113_16_if_stmt:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_113_19_begin:
         %tmp.24 = lgetv %HRS.3;
         %tmp.25 = null;
         %tmp.26 = ne %tmp.24 %tmp.25;
         %tmp.27 = dup %tmp.26;
-        bf %tmp.27 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_32_end;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_32_true:
+        bf %tmp.27 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_113_32_end;
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_113_32_true:
         %tmp.28 = lgetv %HRS.3;
         %tmp.29 = as %tmp.28 { (!Null) };
         %tmp.30 = getv %tmp.29 :heartRate;
@@ -401,31 +419,31 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.33 = ne %tmp.30 %tmp.32;
         %tmp.34 = and %tmp.26 %tmp.33;
         push %tmp.34;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_32_end:
-        %tmp.35 = phi [%tmp.27 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_19_begin] [%tmp.34 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_32_true] [%tmp.35 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_32_end];
-        bf %tmp.35 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_16_if_end;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_16_if_true:
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_70_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 111 20 ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_113_32_end:
+        %tmp.35 = phi [%tmp.27 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_113_19_begin] [%tmp.34 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_113_32_true] [%tmp.35 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_113_32_end];
+        bf %tmp.35 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_113_16_if_end;
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_113_16_if_true:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_113_70_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 115 20 ]
         %tmp.36 = lgetv %HRS.3;
         %tmp.37 = as %tmp.36 { (!Null) };
         %tmp.38 = getv %tmp.37 :heartRate;
         lputv %heartRate.1 %tmp.38;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_70_stop:
-        goto @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_16_if_end;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_16_if_end:
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_105_32_stop:
-        goto @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_105_12_if_end;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_105_12_if_end:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 115 12 ]
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_115_12_if_stmt:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_113_70_stop:
+        goto @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_113_16_if_end;
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_113_16_if_end:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_32_stop:
+        goto @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_12_if_end;
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_109_12_if_end:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 119 12 ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_119_12_if_stmt:
         %tmp.40 = lgetv %heartRate.1;
         %tmp.41 = null;
         %tmp.42 = ne %tmp.40 %tmp.41;
-        bf %tmp.42 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_115_12_if_false;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_115_12_if_true:
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_115_32_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 116 16 ]
+        bf %tmp.42 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_119_12_if_false;
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_119_12_if_true:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_119_32_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 120 16 ]
         %tmp.43 = "HR ";
         %tmp.44 = lgetv %heartRate.1;
         %tmp.45 = as %tmp.44 { (!Null) };
@@ -433,20 +451,20 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.47 = invoke %tmp.45 %tmp.46();
         %tmp.48 = add %tmp.43 %tmp.47;
         lputv %heartRate.1 %tmp.48;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_115_32_stop:
-        goto @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_115_12_if_end;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_115_12_if_false:
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_117_19_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 118 16 ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_119_32_stop:
+        goto @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_119_12_if_end;
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_119_12_if_false:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_121_19_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 122 16 ]
         %tmp.49 = "HR --";
         lputv %heartRate.1 %tmp.49;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_117_19_stop:
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_115_12_if_end:
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_102_42_stop:
-        goto @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_102_8_if_end;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_102_8_if_end:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 122 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_100_42_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_100_42_stop" ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_121_19_stop:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_119_12_if_end:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_106_42_stop:
+        goto @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_106_8_if_end;
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_106_8_if_end:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 126 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_104_42_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_104_42_stop" ]
         %heartRateDisplay.4 = local;
         %tmp.51 = getv ? :View;
         %tmp.52 = getv function %tmp.51 :findDrawableById;
@@ -454,19 +472,19 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.54 = invoke %tmp.51 %tmp.52(%tmp.53);
         %tmp.55 = as %tmp.54 Text;
         lputv %heartRateDisplay.4 %tmp.55;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 123 8 ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 127 8 ]
         %tmp.56 = lgetv %heartRateDisplay.4;
         %tmp.57 = getv function %tmp.56 :setText;
         %tmp.59 = lgetv %heartRate.1;
         invoke %tmp.56 %tmp.57(%tmp.59);
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_100_42_stop:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_104_42_stop:
     }
-    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 126; ]
+    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 130; ]
     protected
     function setStepDisplay() {
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_126_37_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 127 5 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_126_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_126_37_stop" ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_130_37_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 131 5 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_130_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_130_37_stop" ]
         %stepsData.1 = local;
         %tmp.1 = getm $.Toybox.ActivityMonitor;
         %tmp.2 = getv function %tmp.1 :getInfo;
@@ -475,30 +493,30 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.5 = getv function %tmp.4 :toString;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         lputv %stepsData.1 %tmp.6;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 128 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_126_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_126_37_stop" ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 132 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_130_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_130_37_stop" ]
         %steps.2 = local;
         %tmp.7 = "";
         lputv %steps.2 %tmp.7;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 130 8 ]
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_130_8_if_stmt:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 134 8 ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_134_8_if_stmt:
         %tmp.9 = lgetv %stepsData.1;
         %tmp.10 = null;
         %tmp.11 = ne %tmp.9 %tmp.10;
-        bf %tmp.11 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_130_8_if_end;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_130_8_if_true:
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_130_31_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 131 12 ]
+        bf %tmp.11 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_134_8_if_end;
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_134_8_if_true:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_134_31_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 135 12 ]
         %tmp.12 = "Steps\n";
         %tmp.14 = lgetv %stepsData.1;
         %tmp.15 = as %tmp.14 { (!Null) };
         %tmp.16 = add %tmp.12 %tmp.15;
         lputv %steps.2 %tmp.16;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_130_31_stop:
-        goto @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_130_8_if_end;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_130_8_if_end:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 134 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_126_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_126_37_stop" ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_134_31_stop:
+        goto @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_134_8_if_end;
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_134_8_if_end:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 138 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_130_37_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_130_37_stop" ]
         %stepsDisplay.3 = local;
         %tmp.18 = getv ? :View;
         %tmp.19 = getv function %tmp.18 :findDrawableById;
@@ -506,19 +524,19 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
         %tmp.22 = as %tmp.21 Text;
         lputv %stepsDisplay.3 %tmp.22;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 135 8 ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 139 8 ]
         %tmp.23 = lgetv %stepsDisplay.3;
         %tmp.24 = getv function %tmp.23 :setText;
         %tmp.26 = lgetv %steps.2;
         invoke %tmp.23 %tmp.24(%tmp.26);
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_126_37_stop:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_130_37_stop:
     }
-    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 138; ]
+    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 142; ]
     protected
     function setCaloriesDisplay() {
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_138_41_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 139 5 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_138_41_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_138_41_stop" ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_142_41_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 143 5 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_142_41_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_142_41_stop" ]
         %caloriesData.1 = local;
         %tmp.1 = getm $.Toybox.ActivityMonitor;
         %tmp.2 = getv function %tmp.1 :getInfo;
@@ -527,30 +545,30 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.5 = getv function %tmp.4 :toString;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         lputv %caloriesData.1 %tmp.6;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 140 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_138_41_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_138_41_stop" ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 144 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_142_41_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_142_41_stop" ]
         %calories.2 = local;
         %tmp.7 = "";
         lputv %calories.2 %tmp.7;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 142 8 ]
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_142_8_if_stmt:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 146 8 ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_146_8_if_stmt:
         %tmp.9 = lgetv %caloriesData.1;
         %tmp.10 = null;
         %tmp.11 = ne %tmp.9 %tmp.10;
-        bf %tmp.11 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_142_8_if_end;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_142_8_if_true:
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_142_34_start:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 143 12 ]
+        bf %tmp.11 @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_146_8_if_end;
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_146_8_if_true:
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_146_34_start:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 147 12 ]
         %tmp.12 = "Cals\n";
         %tmp.14 = lgetv %caloriesData.1;
         %tmp.15 = as %tmp.14 { (!Null) };
         %tmp.16 = add %tmp.12 %tmp.15;
         lputv %calories.2 %tmp.16;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_142_34_stop:
-        goto @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_142_8_if_end;
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_142_8_if_end:
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 146 8 ]
-        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_138_41_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_138_41_stop" ]
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_146_34_stop:
+        goto @C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_146_8_if_end;
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_146_8_if_end:
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 150 8 ]
+        [ "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_142_41_start" "C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_142_41_stop" ]
         %caloriesDisplay.3 = local;
         %tmp.18 = getv ? :View;
         %tmp.19 = getv function %tmp.18 :findDrawableById;
@@ -558,20 +576,20 @@ C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceVie
         %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
         %tmp.22 = as %tmp.21 Text;
         lputv %caloriesDisplay.3 %tmp.22;
-[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 147 8 ]
+[ "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc" 151 8 ]
         %tmp.23 = lgetv %caloriesDisplay.3;
         %tmp.24 = getv function %tmp.23 :setText;
         %tmp.26 = lgetv %calories.2;
         invoke %tmp.23 %tmp.24(%tmp.26);
-C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_138_41_stop:
-    }
-    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 153; ]
-    function onHide() as Void {
+C_Users_white_OneDrive_Garmin_Watchfaces_firstWatchFace_source_firstWatchFaceView_mc_142_41_stop:
     }
     [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 157; ]
-    function onExitSleep() as Void {
+    function onHide() as Void {
     }
     [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 161; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "C:\Users\white\OneDrive\Garmin Watchfaces\firstWatchFace\source\firstWatchFaceView.mc"; @line = 165; ]
     function onEnterSleep() as Void {
     }
 }
